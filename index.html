@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital@1&display=swap");
+
+
+      * {
+        margin: 0;
+        font-size: 0.95em;
+        font-family: "Red Hat Display", sans-serif;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        background-color: whitesmoke;
+      }
+      .black {
+        color: #333;
+      }
+      .white {
+        color: whitesmoke;
+      }
+      .container {
+        min-height: fit-content;
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: whitesmoke;
+        border-radius: 5px;
+      }
+      .hero {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        width: 100%;
+      }
+      * {
+        color: #333;
+        background-size: cover;
+      }
+      .container-plan {
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+      }
+
+      .container-row {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: hsl(225, 100%, 093.5%);
+        color: #333;
+        margin: 1em auto;
+        border-radius: 10px;
+        width: 90%;
+      }
+
+      h2,
+      h3 {
+        padding: 1em 0;
+        text-align: center;
+      }
+      h2 {
+        font-weight: 900;
+      }
+      h3 {
+        font-weight: 700;
+      }
+      .container-plan p {
+        color: #333;
+        padding: 0.5em;
+      }
+      a {
+        cursor: pointer;
+      }
+      h2 + p {
+        padding: 1em;
+        text-align: justify;
+      }
+      .contain {
+        height: 100vh;
+        width: 100vw;
+        background-image: url(./images/pattern-background-desktop.svg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .music-icon {
+        margin: 1em;
+      }
+      .pay-btn {
+        width: 80%;
+        text-align: center;
+        height: auto;
+        background-color: hsl(245, 75%, 52%);
+        color: whitesmoke;
+        border-radius: 5px;
+        margin: 0 auto;
+        padding: 1em;
+      }
+      .change {
+        color: hsl(224, 100%, 55%);
+      }
+      .none {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contain">
+      <div class="container">
+        <img src="./images/illustration-hero.svg" class="hero" alt="" />
+        <h2>Order Summary</h2>
+        <p>
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <div class="container-row">
+          <img src="./images/icon-music.svg" class="music-icon" alt="" />
+          <div class="container-plan">
+            <p>Annual Plan</p>
+            <p>$59.99/year</p>
+          </div>
+          <a href="#" class="change">Change</a>
+        </div>
+        <a class="pay-btn">Proceed to Payment</a>
+        <a href="#" class="none"><h3>Cancel Order</h3></a>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">hamsananth</a>.
+      </div>
+    </div>
+  </body>
+</html>
